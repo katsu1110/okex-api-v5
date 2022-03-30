@@ -1,5 +1,7 @@
-from .client import Client
-from .consts import *
+# from .client import Client
+# from .consts import *
+from client import Client
+from consts import *
 # import inspect
 
 class TradeAPI(Client):
