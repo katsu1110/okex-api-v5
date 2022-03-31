@@ -1,6 +1,6 @@
 import requests
 import json
-from consts import *
+import consts  as c
 import utils
 import exceptions
 # from . import consts as c, utils, exceptions

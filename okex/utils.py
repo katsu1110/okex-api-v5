@@ -2,11 +2,12 @@ import hmac
 import base64
 import time
 import datetime
-from . import consts as c
+import consts as c
+# from . import consts as c
 
 
 def sign(message, secretKey):
-    mac = hmac.new(bytes(secretKey, encoding='utf8'), bytes(message, encoding='utf-8'), digestmod='sha256')
+    mac = hmac.new(bytes(str(secretKey), encoding='utf8'), bytes(str(message), encoding='utf-8'), digestmod='sha256')
     d = mac.digest()
     return base64.b64encode(d)
 
